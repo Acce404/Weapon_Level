@@ -1,0 +1,217 @@
+function OnEvent(event, arg)
+	if (event == "MOUSE_BUTTON_RELEASED" and arg == 9) then
+
+		if (not IsKeyLockOn("capslock")) then
+			PressKey("capslock")
+			Sleep(5)
+			ReleaseKey("capslock")
+
+		end
+	--InvestigationHeavyWeaponXP()
+  --InvestigationKineticWeaponXP()
+  InvestigationEnergyWeaponXP()
+	end
+end
+
+function InvestigationKineticWeaponXP()
+while (IsKeyLockOn("capslock")) do
+	run(2500)
+PressAndReleaseKey("1")
+	Sleep(20)
+	PressKey("a")
+	Sleep(500)
+	ReleaseKey("a")
+	PressKey("e")
+	Sleep(500)
+	ReleaseKey("e")
+	
+	Sleep(2000)
+	PressKey("w")
+	Sleep(500)
+	ReleaseKey("w")
+	Sleep(500)
+	PressAndReleaseKey("f")
+	Sleep(2000)
+	for i=0,5,1 do
+		MoveMouseRelative(0,-22)
+		Sleep(10)
+	end
+
+	PressAndReleaseMouseButton(1)
+
+	Sleep(100)
+	PressKey("f1")
+	Sleep(200)
+	ReleaseKey("f1")
+	Sleep(1000)
+for i=1,12,1 do
+	MoveMouseRelative(-11,-3)
+Sleep(1)
+	end
+Sleep(500)
+MoveMouseRelative(-30,0)
+Sleep(300)
+PressAndReleaseMouseButton(1)
+Sleep(10000)
+PressAndReleaseMouseButton(1)
+Sleep(500)
+PressAndReleaseKey("escape")
+Sleep(500)
+PressAndReleaseKey("3")
+Sleep(500)
+	for i=0,20,1 do
+		MoveMouseRelative(0,50)
+		Sleep(10)
+	end
+Sleep(500)
+	PressAndReleaseMouseButton(1)
+	Sleep(18000)
+
+end
+end
+
+function InvestigationEnergyWeaponXP()
+while (IsKeyLockOn("capslock")) do
+	run(2500)
+PressAndReleaseKey("2")
+	Sleep(20)
+	PressKey("a")
+	Sleep(500)
+	ReleaseKey("a")
+	PressKey("e")
+	Sleep(500)
+	ReleaseKey("e")
+	
+	Sleep(2000)
+	PressKey("w")
+	Sleep(500)
+	ReleaseKey("w")
+	Sleep(500)
+	PressAndReleaseKey("f")
+	Sleep(2000)
+	PressAndReleaseMouseButton(1)
+
+	Sleep(100)
+	PressKey("f1")
+	Sleep(200)
+	ReleaseKey("f1")
+	Sleep(1000)
+for i=1,12,1 do
+	MoveMouseRelative(-12,0)
+Sleep(1)
+	end
+Sleep(500)
+MoveMouseRelative(-30,0)
+Sleep(300)
+PressAndReleaseMouseButton(1)
+
+Sleep(3000)
+PressAndReleaseMouseButton(1)
+Sleep(500)
+PressAndReleaseKey("escape")
+Sleep(500)
+PressAndReleaseKey("3")
+Sleep(500)
+	for i=0,20,1 do
+		MoveMouseRelative(0,50)
+		Sleep(10)
+	end
+Sleep(500)
+	PressAndReleaseMouseButton(1)
+	Sleep(18000)
+
+end
+end
+
+function InvestigationHeavyWeaponXP()
+while (IsKeyLockOn("capslock")) do
+	run(2500)
+PressAndReleaseKey("3")
+	Sleep(20)
+	PressKey("a")
+	Sleep(500)
+	ReleaseKey("a")
+	PressKey("e")
+	Sleep(500)
+	ReleaseKey("e")
+	
+	Sleep(2000)
+	PressKey("w")
+	Sleep(500)
+	ReleaseKey("w")
+	Sleep(3000)
+	PressAndReleaseKey("f")
+	Sleep(2000)
+	for i=0,5,1 do
+		MoveMouseRelative(1,8)
+		Sleep(10)
+	end
+	gjallarhornshot()
+	Sleep(500)
+	PressKey("f1")
+	Sleep(200)
+	ReleaseKey("f1")
+	Sleep(1000)
+for i=1,12,1 do
+	MoveMouseRelative(-11,3)
+Sleep(1)
+	end
+Sleep(500)
+MoveMouseRelative(-30,0)
+Sleep(300)
+PressAndReleaseMouseButton(1)
+Sleep(4000)
+PressAndReleaseMouseButton(1)
+Sleep(500)
+PressAndReleaseKey("escape")
+Sleep(1000)
+	for i=0,20,1 do
+		MoveMouseRelative(0,50)
+		Sleep(10)
+	end
+	PressAndReleaseMouseButton(1)
+	Sleep(18000)
+
+end
+end
+
+function run(t)
+	PressKey("w")
+	Sleep(10)
+	PressKey("lshift")
+	Sleep(t)
+	ReleaseKey("w")
+	ReleaseKey("lshift")
+end
+
+function gjallarhornshot()
+	PressMouseButton(3)
+	Sleep(500)
+	scan8()
+	PressMouseButton(1)
+	Sleep(20)
+	ReleaseMouseButton(3)
+	ReleaseMouseButton(1)
+end
+
+function scan8()
+	for i=0,5,1 do
+		MoveMouseRelative(10,0)
+		Sleep(3)
+	end
+	for i=0,5,1 do
+		MoveMouseRelative(-10,10)
+		Sleep(3)
+	end
+	for i=0,5,1 do
+		MoveMouseRelative(10,0)
+		Sleep(3)
+	end
+	for i=0,5,1 do
+		MoveMouseRelative(-10,-10)
+		Sleep(3)
+	end
+end
+
+
+
